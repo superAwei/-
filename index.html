@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/all.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        // 第一題:.印出乘法表，從 3~15，從 3x1、3x2~一直到 15x15
+        function getMultiplication( x, y ){
+          let str=[];
+          for( let i = 3; i <= x; i++){
+            for(let j = 1; j<=y; j++){
+              str.push(`${i}x${j}=${i*j}`);
+            }
+          }
+          console.log(str.join(','));
+        }
+        getMultiplication(15,15);
+      </script>
 </body>
 </html>
